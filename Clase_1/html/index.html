@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer html</title>
+  </head>
+  <body>
+    <header>
+      <h1>Encabezado Principal</h1>
+      <nav>
+        <ul>
+          <li><a href="#estructura">Ir a estructura</a></li>
+          <li><a href="#multimedia">Ir a multimedia</a></li>
+          <li><a href="#formulario">Ir a formulario</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <section>
+        <!-- 4.1 Estructura Básica del Documento HTML -->
+        <h1 id="estructura">1. Estructura Básica del documento HTML</h1>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración DOCTYPE, etiquetas de metadatos y un titulo.</p>
+      </section>
+  
+      <section>
+        <!-- 4.2 Encabezados y Propiedades del Texto -->
+        <h2>2. Encabezados y Propiedades del texto</h2>
+        <h2 style="font-weight: bold">Texto en negrita</h2>
+        <h3 style="font-style: italic">Texto en cursiva</h3>
+        <h4 style="text-decoration: underline">Texto subrayado</h4>
+        <h5 style="text-decoration: line-through">Texto tachado</h5>
+        <h6 style="font-weight: bold; font-style: italic; text-decoration: underline">Texto en negrita, cursiva y subrayado</h6>
+      </section>
+  
+      <section>
+        <!-- 4.3 Divisiones y Agrupación de Contenido -->
+        <h2>3 Divisiones y Agrupación de Contenido</h2>
+        <div>
+          <h2>Seccion 1</h2>
+          <p>Contenido de la seccion 1 en un div</p>
+        </div>
+        <div>
+          <h2>Seccion 2</h2>
+          <p>Contenido de la seccion 2 en un div</p>
+        </div>
+      </section>
+      
+      <section>
+        <!-- 4.4 Enlaces y Listas -->
+        <h2>4 Enlaces y Listas</h2>
+        <p>Visita nuestro <a href="https://www.instagram.com/thrill.clthes/">sitio web</a></p>
+        <h2>Enlaces internos</h2>
+        <ul>
+          <li><a href="#estructura">Ir a estructura</a></li>
+          <li><a href="#multimedia">Ir a multimedia</a></li>
+          <li><a href="#formulario">Ir a formulario</a></li>
+        </ul>
+        <h2>Elementos ordenados</h2>
+        <ol>
+          <li>elemento 1</li>
+          <li>elemento 2</li>
+          <li>elemento 3</li>
+        </ol>
+        <h2>Elementos desordenados</h2>
+        <ul>
+          <li>elemento 1</li>
+          <li>elemento 2</li>
+          <li>elemento 3</li>
+        </ul>
+      </section>
+  
+      <section>
+        <!-- 4.5 Elementos Multimedia -->
+        <h2 id="multimedia">5 Elementos Multimedia</h2>
+        <img src="sources/thrill.png" alt="Thrill foto mi marca" width="300" height="300">
+    
+        <video width="300" height="300" controls>
+          <source src="sources/coscu.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+    
+        <audio controls>
+          <source src="sources/PSG.mp3" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </section>
+  
+      <section>
+        <!-- 4.6 Tablas -->
+        <h2>6 Tablas</h2>
+        
+        <table style="border: 1px solid black;">
+          <thead>
+              <tr>
+                  <th style="border: 1px solid black;">Nombre</th>
+                  <th style="border: 1px solid black;">Edad</th>
+                  <th style="border: 1px solid black;">Ciudad</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="border: 1px solid black;">Ana</td>
+                  <td style="border: 1px solid black;">28</td>
+                  <td style="border: 1px solid black;">Buenos Aires</td>
+              </tr>
+              <tr>
+                  <td style="border: 1px solid black;">Carlos</td>
+                  <td style="border: 1px solid black;">34</td>
+                  <td style="border: 1px solid black;">Córdoba</td>
+              </tr>
+          </tbody>
+        </table>
+      </section>
+  
+      <section>
+        <!-- 4.7 Formularios -->
+        <form>
+          <label for="nombre">Nombre:</label> 
+          <input type="text" placeholder="nombre">
+          <label for="email">Email:</label>
+          <input type="email" placeholder="ejemplo@gmail.com">
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensahe" placeholder="Su mensaje va aqui..."></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+        <h2 id="formulario">4.7 Formularios</h2>
+      </section>
+      
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>
