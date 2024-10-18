@@ -1,0 +1,61 @@
+:root {
+  --fontHeadding: "PT Sans", sans-serif;
+  --fontParagraph: "Open Sans", sans-serif;
+
+  --primaryColor: #2ed1f9;
+  --secondaryColor: #1f81c6;
+  --whiteColor: aliceblue;
+  --blackColor: #252525;
+
+  --primaryGradiant: linear-gradient(
+    90deg,
+    #090979 31%,
+    var(--primaryColor) 100%
+  );
+}
+
+.login__body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--primaryGradiant);
+}
+.login__container {
+  width: min(90%, 30rem);
+  margin-top: 5vh;
+}
+.login__tittle {
+  color: var(--whiteColor);
+}
+.login__form {
+  background-color: var(--whiteColor);
+}
+.icon {
+  font-size: 10rem;
+}
+.login__buttonSend {
+  background-color: var(--secondaryColor);
+  padding: 0.5rem 5vw;
+}
+/* Utilities */
+.login__errorBorder {
+  transition: border 0.5s ease;
+  border: 2px solid red;
+}
+.login__errorMesaje {
+  font-size: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+}
+.login__errorMesajeVisivility {
+  font-size: medium;
+  color: red;
+  text-align: center;
+  margin: 10px;
+
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
