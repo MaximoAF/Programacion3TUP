@@ -22,26 +22,34 @@
   background: var(--primaryGradiant);
 }
 .login__container {
-  width: min(90%, 30rem);
+  width: min(90%, 23rem);
   margin-top: 5vh;
 }
-.login__tittle {
+.login__color {
   color: var(--whiteColor);
+}
+.login__tittle{
+  transform: translateY(-20px);
 }
 .login__form {
   background-color: var(--whiteColor);
+  font-size: small;
 }
 .icon {
-  font-size: 10rem;
+  font-size: 7.5rem;
 }
 .login__buttonSend {
   background-color: var(--secondaryColor);
   padding: 0.5rem 5vw;
+  font-size: small;
+}
+.login__input{
+  font-size: small;
 }
 /* Utilities */
 .login__errorBorder {
   transition: border 0.5s ease;
-  border: 2px solid red;
+  border: 1px solid red;
 }
 .login__errorMesaje {
   font-size: 0;
@@ -50,7 +58,7 @@
   transition: all 0.5s ease;
 }
 .login__errorMesajeVisivility {
-  font-size: medium;
+  font-size: small;
   color: red;
   text-align: center;
   margin: 10px;

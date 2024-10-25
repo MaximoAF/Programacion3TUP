@@ -1,7 +1,9 @@
+import { heroesData } from '../../../data/heroes';
+import { ListarHeroes } from '../../ui/ListarHeroes/ListarHeroes';
 export const Home = () => {
   return (
     <>
-      <h2>Home</h2>
+      <ListarHeroes heroes={heroesData} tittle="Todos los Heroes"/>
     </>
   );
 };
