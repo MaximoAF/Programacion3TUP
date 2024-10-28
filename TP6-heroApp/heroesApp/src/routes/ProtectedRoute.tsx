@@ -4,6 +4,7 @@ import { Home } from "../components/screens/Home/Home"
 import { Search } from "../components/screens/Search/Search"
 import { MarvelHeroes } from "../components/screens/MarvelHeroes/MarvelHeroes"
 import { DcHeroes } from "../components/screens/DcHeroes/DcHeroes"
+import { HeroPage } from "../components/screens/HeroPage/HeroPage"
 
 export const ProtectedRoute = () => {
   return (
@@ -14,6 +15,8 @@ export const ProtectedRoute = () => {
         <Route path="/search" element={<Search />} />
         <Route path="/marvelHeroes" element={<MarvelHeroes />} />
         <Route path="/dcHeroes" element={<DcHeroes />} />
+        <Route path="/hero/:id" element={<HeroPage />} />
+
       </Routes>
     </>
   )
